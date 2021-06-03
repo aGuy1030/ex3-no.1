@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登錄が完了しました。誠にありがとうございます。</title>
+    <style>
+        body{background-color:black;
+             color: white;
+        }
+        h1{background-color: red;
+             color: black;
+        }
+        h2{
+            color:red;
+        }
+    
+    </style>
+    </head>
+<body>
+    <script src="index.js"></script>
+    <h1>会員登錄ありがとうございます。以下より登錄内容を今一度ご確認ください。<br></h1>
+    <p  style="text-align:center">この度は弊社有料サイトをご利用いただき、誠にありがとうございました。<br>お客様の個人情報を取得させていただき、会員登録が完了いたしました。<br>初月の利用料50,000円を、至急下記口座までお振込みくださいます様、お願いいたします。<br>なお支払期限を過ぎても利用料をお支払いいただけない場合、お客様のご自宅、またはお勤め先へご請求をさせていただく場合もございます。予めご了承くださいませ。<br></p>
+    <h2 style="text-align:center">   
+    <script src="index.js">
+    </script>
+
+    ご登録日<br>
+    <span id="view_time"></span>
+
+    <script type="text/javascript">
+    document.getElementById("view_time").innerHTML=getNow();
+    
+    function getNow(){
+        var now = new Date();
+        var year = now.getFullYear();
+        var mon = now.getMonth()+1;
+        var day = now.getDate();
+        var hour = now.getHours();
+        var min = now.getMinutes();
+        var sec = now.getSeconds();
+    　　
+        var s = year+"年"+ mon + "月" + day + "日" + hour + "時" + min +"分" + sec + "秒";
+        return s;
+    }
+    </script>
+    　　　お支払期限：登録日より3日後
+    </h2>
+    <h3 style="text-align:center">〈振込先〉</h3>
+    <p style="text-align:center">〈銀行名〉子ども銀行<br>〈支店名〉津幡支店<br>〈口座名義〉ヤマダ　ハナオ<br>〈口座番号〉普）123456<br>〈振込金額〉50,000円<br>
+    ※なお、お支払手数料に関しましてはお客様のご負担となります。</p>
+    <p style="text-align:center"><u><font size="100">登録解除の手続きはこちらから　→　0120-114-514</font></u></p>
+    <h4 style="text-align:right"> 
+        <button onclick="help()">
+        ヘルプ
+        </button>
+        <button onclick="service()">
+            サービス利用規約
+        </button>
+        <button onclick="company()">
+            会社所在地
+        </button>
+　　</h4>
+    <p style="text-align:right">会社Webページへはこちらから<br>
+    <a href="https://www.ishikawa-nct.ac.jp/">http://oneclick.com</a><br></p>
+
+</body>
+</html>
